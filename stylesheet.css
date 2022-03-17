@@ -1,0 +1,60 @@
+main {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-areas: 
+        "a b b"
+        "a c c";
+}
+
+.container{
+    
+}
+
+.button {
+    border-radius: 10px;
+    width:256px;
+    height:48px;
+    justify-content:center;
+}
+
+.side{
+    justify-content:right;
+    width: 40vw; 80vh;
+    display:flex;
+    grid-area: a;
+}
+
+
+.intro{
+    background-color:white;
+    grid-area:b;
+    text-align:center;
+    font-size:larger;
+    font-weight:bolder;
+}
+
+.name{
+    justify-content:space-around;
+    gap:1em;
+}
+
+.contact{
+    justify-content:space-around;
+    gap:1em;
+}
+
+.password{
+    justify-content:space-around;
+    gap:1em;
+}
+
+.form {
+    color:black;
+    background-color:white;
+    justify-content:center;
+    grid-area:c;
+    text-align:center;
+    position:relative;
+    bottom:70%;
+}
+

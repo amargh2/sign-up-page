@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Sheet</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');</style>
 </head>
 <body>
-    
+    <div class="container">
+        <main>
+            <div class="side">
+                <img src="./lukasz-szmigiel-jFCViYFYcus-unsplash.jpg" alt="forest">
+            </div>
+            <div class="intro">Are you ready to take the plunge? Sign up below!</div>
+            <div class="form">
+                <form action="post">
+                    <div class="first-last">
+                        <section class="name">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="name">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name">
+                        </section>
+                    </div>
+                    <div class="contact-info">
+                        <section class="contact">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                            <label for="telephone">Phone Number</label>
+                            <input type="tel" name="telnumber" id="telephone">
+                        </section>
+                    </div>
+                    <section class="password">
+                        <label for="password">Password</label>
+                        <input type="password" name="pw" id="password_confirm">
+                        <label for="password_confirm">Confirm Password</label>
+                        <input type="password" name="pw_confirm" id="password_confirm">
+                    </section>
+                    <section class="submit">
+                        <input type="submit" class="button" value="Create Account">
+                    </section>
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
